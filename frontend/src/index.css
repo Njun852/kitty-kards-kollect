@@ -1,0 +1,36 @@
+:root {
+  --primary: #292929;
+  --accent: #1CE4EE;
+  --accentFont: "Livvic";
+  --font: "Inter";
+  --fontColor: white;
+}
+/*"Lilita One", "Inter"*/
+
+* {
+  font-family: var(--font);
+  color: var(--fontColor);
+}
+body {
+  background-color: var(--primary);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brand {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.brand * {
+  font-family: "Lilita One";
+  font-weight: 400;
+}
+.brand img {
+  height: 80px;
+}
+.brand span {
+  color: var(--accent)
+}

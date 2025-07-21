@@ -1,0 +1,75 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    width: 300px;
+    gap: 8px;
+}
+.login-form h2 {
+    font-weight: 400;
+    font-family: var(--accentFont);
+}
+
+.login-form input {
+    font-family: var(--accentFont);
+    color: black;
+    height: 30px;
+    width: 300px;
+    padding: 3px 5px;
+    font-size: 0.8em;
+    border-radius: 4px;
+    border: none;
+}
+.login-form input:focus{
+    outline: 2px solid rgb(127, 127, 127);
+}
+.login-form i {
+    color: black;
+}
+
+.login-form > .password-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.login-form i {
+    cursor: pointer;
+    transform: translateX(-5px);
+    position: absolute;
+}
+.login-form i:hover {
+    color: var(--accent)
+}
+.login-form > .other-options, .login-form > .other-options div {
+    display: flex;
+    align-items: center;
+
+}
+.login-form > .other-options {
+    width: 100%;
+    justify-content:space-between
+}
+.login-form > .other-options input {
+    width: 18px;
+    height: 18px;
+}
+.login-form > .other-options * {
+    font-family: var(--accentFont);
+    font-size: 12px;
+}
+.login-form button {
+    width: 85%;
+    font-size: 0.8em;
+    padding: 10px;
+    background-color: var(--accent);
+    border-radius: 8px;
+}
+.login p, .login > p span {
+    font-size: 12px;
+}
+.login p span{
+    text-decoration: underline;
+    font-weight: bold;
+}
