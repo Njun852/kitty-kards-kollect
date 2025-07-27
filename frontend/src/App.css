@@ -1,0 +1,126 @@
+.app {
+  padding: 0 15px;
+}
+.app-header {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.app-header .brand {
+  height: 50px;
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.nav img {
+  height: 35px;
+}
+
+.nav span {
+  font-family: var(--accentFont);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.nav * {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav *:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
+.content {
+  width: 50vw;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options {
+  position: relative;
+}
+.options div {
+  padding: 5px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  gap: 2px;
+  right: -50%;
+  color: black;
+  width: 60px;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.2s ease-in-out;
+  background-color: white;
+}
+.options-active {
+    transform: scaleY(1) !important;
+}
+.options span {
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-family: var(--font);
+  color: black;
+}
+.options span:hover {
+  text-decoration: underline;
+}
+.tabs {
+  width: 100%;
+  gap: 12px;
+  display: flex;
+}
+.tabs div {
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+  flex-grow: 1;
+  padding: 12px;
+  color: black;
+  font-family: var(--accentFont);
+  background-color: white;
+}
+
+.active {
+  background-color: var(--accent) !important;
+}
+@media only screen and (max-width: 700px) {
+  .app-header h1,
+  .app-header span {
+    font-size: 1rem;
+  }
+  .content {
+    width: 80%;
+  }
+  .tabs div {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .brand {
+    height: 50px;
+  }
+  .app {
+    padding: 5px;
+  }
+  .content {
+    width: 100%;
+  }
+  .tabs div {
+    font-size: 0.8rem;
+  }
+}

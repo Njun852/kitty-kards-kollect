@@ -1,6 +1,6 @@
 :root {
   --primary: #292929;
-  --accent: #1CE4EE;
+  --accent: #1ce4ee;
   --accentFont: "Livvic";
   --font: "Inter";
   --fontColor: white;
@@ -28,9 +28,12 @@ body {
   font-family: "Lilita One";
   font-weight: 400;
 }
-.brand img {
+.brand {
   height: 80px;
 }
+.brand img {
+  height: 100%;
+}
 .brand span {
-  color: var(--accent)
+  color: var(--accent);
 }
