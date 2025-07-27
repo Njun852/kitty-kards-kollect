@@ -24,7 +24,6 @@ export async function appAction({ request }) {
   }
 }
 function App() {
-  const [activeTab, setActiveTab] = useState("feed");
   const { username } = useLoaderData();
   const [optionsActive, setOptionsActive] = useState(false);
   const navigate = useNavigate();
@@ -35,10 +34,9 @@ function App() {
       navigate("/feed");
     }
   }, []);
+  const activeTab = location.pathname
   const switchTab = (e) => {
     const tabName = e.target.dataset.tabname;
-    if (tabName === activeTab) return;
-    setActiveTab(tabName);
     navigate(tabName);
   };
   const logout = () => {
@@ -79,21 +77,21 @@ function App() {
       <div className="content">
         <nav className="tabs">
           <div
-            className={activeTab === "feed" ? "active" : ""}
+            className={activeTab === "/feed" ? "active" : ""}
             data-tabname="feed"
             onClick={switchTab}
           >
             📷Feed
           </div>
           <div
-            className={activeTab === "collection" ? "active" : ""}
+            className={activeTab === "/collection" ? "active" : ""}
             data-tabname="collection"
             onClick={switchTab}
           >
             🐾Collection
           </div>
           <div
-            className={activeTab === "store" ? "active" : ""}
+            className={activeTab === "/store" ? "active" : ""}
             data-tabname="store"
             onClick={switchTab}
           >
