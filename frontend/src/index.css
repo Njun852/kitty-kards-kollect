@@ -8,6 +8,7 @@
 /*"Lilita One", "Inter"*/
 
 * {
+  user-select: none;
   font-family: var(--font);
   color: var(--fontColor);
 }

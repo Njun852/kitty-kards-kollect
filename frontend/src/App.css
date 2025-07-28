@@ -93,6 +93,30 @@
 .active {
   background-color: var(--accent) !important;
 }
+
+.duel-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FF6A5F;
+  color: black;
+  font-family: var(--font);
+  font-weight: bold;
+  border: none;
+  top: 80%;
+  left: 80%;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 12px;
+  height: 100px;
+  padding: 12px;
+}
+.duel-btn img {
+  height: 70px;
+  
+}
 @media only screen and (max-width: 700px) {
   .app-header h1,
   .app-header span {

@@ -100,6 +100,10 @@ function App() {
         </nav>
         <Outlet />
       </div>
+      <button className="duel-btn">
+            <img src="./src/assets/fight.png" alt="" />
+            DUEL
+      </button>
     </div>
   );
 }
